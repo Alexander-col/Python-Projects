@@ -178,23 +178,55 @@ def splatoon_art_2():
 
 #Above are all the ASCII art there are two art functions for each option 
 def overwatch_options():
-    pass
+    option = input("Would you like to see Overwatch art 1 or 2? ")
+    if option == "1":
+        overwatch_art_1()
+    elif option == "2":
+        overwatch_art_2()
+
+def miku_options():
+    option = input("Would you like to see Hastume Miku art 1 or 2? ")
+    if option == "1":
+        miku_art_1()
+    elif option == "2":
+        miku_art_2()
+
+def splatoon_options():
+    option = input("Would you like to see Splatoon art 1 or 2? ")
+    if option == "1":
+        splatoon_art_1()
+    elif option == "2":
+        splatoon_art_2()
+
+#Above are all of the option screen in case you choose Splat Over or Miku!
     
-
-
-
-
 
 name = input("But first just curious, what's your name? ")
 def options_screen():
-    answ = input(name + " Would you like to see Miku, Overwatch or Splatoon art?")
-# miku_art_1()
-# miku_art_2()
-# overwatch_art_1()
-# splatoon_art_1()
-# splatoon_art_2()
+    option = input(name + " Would you like to see Miku, Overwatch or Splatoon art? ")
+    if option == "Overwatch":
+        overwatch_options()
+    elif option == "Splatoon":
+        splatoon_options();
+    elif option == "Miku":
+        miku_options()
+    else:
+        print(option + " is not art the we have sorry :(")
+        options_screen()
+
+
 print("Welcome to the ascii art program! \nYou look so good, can't wait to show you art!") 
 options_screen()
+
+choice = "Yes"
+while(choice == "Yes"):
+    choice = input("Would you like to see more art? Yes or No: ")
+    options_screen()
+    if choice == "No":
+        break
+
+print("This is the end of ASCII ART Program! thank you so much "+ name)
+#while loop if they would like to stary
 # Basic print introduction statment
 # Declare name and input with it 
 
