@@ -175,15 +175,27 @@ def splatoon_art_2():
     print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⢾⠛⠒⠊⠉⠀⠀⠀⢀⠀⠀⠀⠀⠀⢀⢻⠁⠀⠀⠀⠳⡀⠀⠀⠙⢁⡼⠁⠀⠀⠀⠀")
     print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⢁⠇⠀⠀⠀⠀⠀⠀⡠⠃⠀⠀⠀⠀⠀⡜⢸⠀⠀⠀⠀⠀⠈⠒⠢⠔⠋⠀⠀⠀⠀⠀⠀")
     print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣻⡜⠀⠀⠀⠀⠀⣠⠞⠀⠀⠀⠀⠀⠀⡸⠁⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n")
-print("Welcome to the ascii art program! \nYou look so good, can't wait to show you art!") 
-# Basic print introduction statment
+
+#Above are all the ASCII art there are two art functions for each option 
+def overwatch_options():
+    pass
+    
+
+
+
+
 
 name = input("But first just curious, what's your name? ")
-miku_art_1()
-miku_art_2()
-overwatch_art_1()
-splatoon_art_1()
-splatoon_art_2()
+def options_screen():
+    answ = input(name + " Would you like to see Miku, Overwatch or Splatoon art?")
+# miku_art_1()
+# miku_art_2()
+# overwatch_art_1()
+# splatoon_art_1()
+# splatoon_art_2()
+print("Welcome to the ascii art program! \nYou look so good, can't wait to show you art!") 
+options_screen()
+# Basic print introduction statment
 # Declare name and input with it 
 
 # def miku_art():
